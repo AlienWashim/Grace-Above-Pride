@@ -1,0 +1,128 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #121212; 
+  color: white;
+  font-family: 'Arial', sans-serif;
+  justify-content: center; 
+  align-items: center;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-bar {
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.459);
+  width:auto;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 0.5px solid black;
+}
+
+.ranges {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.range-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.range-wrapper input {
+  width: 250px;
+  height: 25px;
+  margin-top: 5px;
+  background: linear-gradient(90deg, red, yellow);
+  border-radius: 10px;
+}
+
+.ohongkar-range input {
+  width: 350px;
+  height: 30px;
+  background: linear-gradient(90deg, red, yellow);
+  box-shadow: 0 0 15px rgb(255, 0, 0), 0 0 30px rgb(255, 0, 0);
+  border-radius: 12px;
+}
+
+.footer {
+  margin-top: 0px;
+  padding: 0px;
+  font-size: 26px;
+  font-family: monospace;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.541);
+  border-top: 0.5px solid black;
+}
+
+.footer-effect {
+  margin-top: 10px;
+  padding-right: 5px;
+  font-size: 24px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.212);
+  border-top: 2px solid cyan;
+}
+
+.typewriter-loop {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid cyan;
+  white-space: nowrap;
+  font-family: monospace;
+  font-weight: bold;
+  color: rgba(0, 255, 255, 0.637);
+  animation: typing 8s steps(30, end) infinite, blink 2s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 32ch;
+  }
+  60% {
+    width: 32ch;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+.glow-pulse {
+  animation: pulseGlow 1s infinite alternate ease-in-out;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5), 0 0 10px rgba(255, 0, 0, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8), 0 0 30px rgba(255, 0, 0, 0.5);
+  }
+}
